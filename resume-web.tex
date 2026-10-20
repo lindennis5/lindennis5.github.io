@@ -1,0 +1,203 @@
+\documentclass[letterpaper,11pt]{article}
+
+%----------PACKAGES----------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{mathpazo}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+%----------COLORS----------
+\definecolor{lightblue}{RGB}{0,120,215}
+
+%----------PAGE STYLE----------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%----------MARGINS----------
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%----------SECTION FORMATTING----------
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Make PDF machine-readable / ATS parsable
+\pdfgentounicode=1
+
+%----------CUSTOM COMMANDS----------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{itemize}[leftmargin=0.15in,label={}]
+}
+
+\newcommand{\resumeSubHeadingListEnd}{
+  \end{itemize}
+}
+
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}
+}
+
+\newcommand{\resumeItemListEnd}{
+  \end{itemize}\vspace{-5pt}
+}
+
+%========================================
+% DOCUMENT
+%========================================
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  \textbf{\Huge \scshape Dennis Lin} \\[2pt]
+  {\small
+
+    \faEnvelope\ \href{mailto:dennislin2900@gmail.com}{dennislin2900@gmail.com} \quad
+    \faLinkedin\ \href{https://www.linkedin.com/in/dennisdlin}{dennisdlin} \quad
+    \faGithub\ \href{https://github.com/lindennis5}{lindennis5}
+  }
+\end{center}
+
+%----------EDUCATION----------
+\section{Education}
+
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {University of Toronto}{Toronto, ON}
+    {HBA in Statistics and Human Geography}{Sep 2020 - Jun 2025}
+    \resumeItemListStart
+      \resumeItem{\textbf{Involvement:} University of Toronto Students' Union, Canadian Asian Student Society, Statistical Students Union}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Seneca Polytechnic}{Toronto, ON}
+    {Postgraduate Certificate, Data Analytics}{Sep 2026 - Present}
+    \resumeItemListStart
+      \resumeItem{\textbf{Relevant Coursework:} Statistics for Analytics, Data Preparation \& Handling, Programming for Analytics, Data Visualization, Predictive Analytics, Data Mining \& Modelling, Machine Learning, Security, Privacy \& Ethics}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%----------SKILLS----------
+\section{Skills}
+
+\begin{flushleft}
+\small
+\textbf{Software, Data, Programming:} Microsoft Office: Excel, PowerPoint, Word, SharePoint, GitHub, Google Analytics, Dashboards, SQL, JavaScript, TypeScript, Python, R, SAS, Power BI, Tableau, Statistical Analysis, Data Cleaning \& Wrangling, Predictive Analytics, Data Mining \& Modelling, Machine Learning, Sentiment Analysis \& Text Mining \\
+\textbf{Product \& Project Management:} Agile, Scrum, Waterfall, Jira, Backlog Management, Business Analysis, Data Quality, Document Management, Process Improvement, Performance Metrics, Cross-functional Collaboration
+\end{flushleft}
+
+\vspace{-12pt}
+
+%----------EXPERIENCE----------
+\section{Experience}
+
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Honda Canada Inc.}{Markham, ON}
+    {Business Analyst Intern II}{Aug 2023 - Aug 2024}
+    \resumeItemListStart
+      \resumeItem{Built transaction monitoring system tracking \textbf{5k+ rebate transactions}, flagging discrepancies + data accuracy}
+      \resumeItem{Automated KPI reporting pipeline, cutting \textbf{manual effort by 30\%} and standardizing performance tracking}
+      \resumeItem{Coordinated document management and workflow organization across finance and IT teams using SharePoint}
+      \resumeItem{Queried, cleaned, and transformed large datasets using SQL \& Excel; automated recurring reporting processes}
+      \resumeItem{Liaised across finance and IT teams; translated technical findings into strategic outcomes for stakeholders}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Honda Canada Inc.}{Markham, ON}
+    {MCPE Business Analyst Intern}{May 2023 - Aug 2023}
+    \resumeItemListStart
+      \resumeItem{Analyzed \textbf{10+ vehicle programs} to identify demand shifts and deliver strategic regional growth recommendations}
+      \resumeItem{Built dashboards consolidating \textbf{20+ inventory metrics} across all Canadian regions to support ops planning}
+      \resumeItem{Coordinated cross-functional initiatives including model launches and partnerships to drive sales execution}
+      \resumeItem{Produced program updates and newsletters distributed to 100+ dealers, maintaining clear channel communication}
+    \resumeItemListEnd
+
+  \vspace{-12pt}
+
+  \resumeSubheading
+    {Restaurant Brands International - Tim Hortons}{Toronto, ON}
+    {Business Analyst}{May 2022 - Aug 2022}
+    \resumeItemListStart
+      \resumeItem{Maintained and organized confidential documents across daily office operations and information systems}
+      \resumeItem{Developed client-facing presentations summarizing market performance insights and growth opportunities}
+      \resumeItem{Monitored and reported on market-specific program performance to support regional business planning}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------PROJECTS & INVOLVEMENT----------
+\section{Projects and Involvement}
+
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Weightle --- Chain Restaurant Guessing Game}{Personal Project}
+    {Fullstack Development - \href{https://github.com/lindennis5/weightle-game}{\textcolor{lightblue}{View on GitHub}} $|$ \href{https://weightle-game.vercel.app/}{\textcolor{lightblue}{Play Live}}}{2026}
+    \resumeItemListStart
+      \resumeItem{Built a Wordle-style guessing game in React 18 and TypeScript, deployed via CI/CD pipeline on Vercel}
+      \resumeItem{Implemented autocomplete search with custom keyboard navigation and zero-latency local data filtering}
+      \resumeItem{Designed responsive UI with accessible CSS layouts and tooltip modules across desktop and mobile viewports}
+    \resumeItemListEnd
+
+ \resumeSubheading
+    {NBA Lineup Fit: Talent vs. Complementarity}{Personal Project}
+    {Data Analytics \& Statistical Modeling $|$ Python, SQL - \href{https://github.com/lindennis5/NBA-Lineup-Fit-th--Project}{\textcolor{lightblue}{View on GitHub}}}{2026}
+    \resumeItemListStart
+        \resumeItem{Analyzing multi-season NBA lineup data to test whether complementary skill fit adds value beyond player talent}
+        \resumeItem{Building four-player core profiles across shooting, creation, play making, rebounding, and defensive dimensions}
+        \resumeItem{Developing reproducible Python/SQL pipeline and statistical models comparing lineup fit against player talent}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {University of Toronto Students' Union}{Toronto, ON}
+    {Events \& Sponsorship Coordinator}{Jan 2021 - May 2022}
+    \resumeItemListStart
+      \resumeItem{Coordinated campus-wide events, including tournaments and student engagement activities with 70+ attendees.}
+      \resumeItem{Managed event logistics such as registration, budgeting support, vendor communication, and on-site operations.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
